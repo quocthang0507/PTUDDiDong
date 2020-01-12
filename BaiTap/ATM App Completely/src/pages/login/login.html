@@ -1,0 +1,32 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+	<ion-navbar>
+		<ion-title text-center>Hệ thống ATM</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-label text-center><h1>Đăng nhập</h1></ion-label>
+	<ion-list>
+		<ion-item>
+			<ion-label fixed>Username: </ion-label>
+			<ion-input [(ngModel)]="username" type="text" placeholder="Nhập tên đăng nhập"
+				value="laquocthang"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label fixed>Password: </ion-label>
+			<ion-input [(ngModel)]="password" type="password" placeholder="Nhập mật khẩu" value="1234"></ion-input>
+		</ion-item>
+		<ion-list>
+			<button block ion-button="" (click)="login()">Đăng nhập</button>
+			<button block ion-button="" (click)="add()">Thêm tài khoản</button>
+			<button block ion-button="" (click)="delete()">Xóa tài khoản</button>
+			<button block ion-button="" (click)="view()">Xem tất cả</button>
+		</ion-list>
+	</ion-list>
+</ion-content>

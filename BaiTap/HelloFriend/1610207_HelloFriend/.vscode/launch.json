@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloFriend",
+            "request": "launch",
+            "mainClass": "app.HelloFriend",
+            "projectName": "1610207_HelloFriend"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+<ion-header>
+	<ion-navbar>
+		<ion-buttons left>
+			<button ion-button icon-only color="primary" (click)="backToLogin()">
+				<ion-icon name="ios-arrow-back"></ion-icon>
+				Back
+			</button>
+		</ion-buttons>
+		<ion-title text-center>Hệ thống ATM</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-label text-center><h1>Tài khoản: {{id}}</h1></ion-label>
+	<ion-list>
+		<h5 id="home-heading3" style="text-align:center;">
+			Các chức năng chính:
+		  </h5>
+		  <button id="home-button3" ion-button color="positive" block on-click="goToBalance()">
+			1. Xem số dư
+		  </button>
+		  <button id="home-button4" ion-button color="balanced" block on-click="goToWithdraw()">
+			2. Rút tiền
+		  </button>
+		  <button id="home-button5" ion-button color="assertive" block on-click="goToDeposit()">
+			3. Thêm tiền
+		  </button>
+		  <button id="home-button6" ion-button color="calm" block on-click="goToTransfer()">
+			4. Chuyển tiền
+		  </button>
+		  <button id="home-button7" ion-button color="energized" block on-click="goToCapture()">
+			5. Chụp hình
+		  </button>
+		  <button id="home-button8" ion-button color="energized" block on-click="goToMap()">
+			6. Xem bản đồ
+		  </button>
+		  <button id="home-button9" ion-button color="energized" block on-click="exit()">
+			7. Thoát
+		  </button>
+		  <img src="assets/imgs/vietcombank.png" style="display:block;width:50%;height:50%;margin-left:auto;margin-right:auto;" />
+	</ion-list>
+</ion-content>
